@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 
 import { authenticate } from './middlewares/auth.js'
-import { createTask } from './controllers/task.js'
+import { createTask, getTasks } from './controllers/task.js'
 import { login } from './controllers/login.js'
 import { register } from './controllers/register.js'
 
@@ -19,3 +19,4 @@ routes.use(authenticate)
 
 // Tasks
 routes.post('/task', createTask)
+routes.get('/tasks', getTasks)

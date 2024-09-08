@@ -10,3 +10,14 @@ export async function createTask(req, res) {
       return res.status(500).json({ message: 'Erro ao criar tarefa' })
     }
   }
+
+export async function getTasks(req, res) {
+  try {
+     const task = await Task.find({ author: req.user.id })
+  
+    return res.status(200).json(task)
+ } catch (error) {
+   console.log(error)
+   return res.status(500).json({ message: 'Erro ao buscar tarefas' })
+  }
+}
