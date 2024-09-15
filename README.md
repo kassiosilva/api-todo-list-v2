@@ -1,6 +1,6 @@
 # API Minhas Tarefas
 
-> Foi desenvolvido também o **front end Minhas listas**. Se quiser olhar como ficou [clique aqui](https://github.com/kassiosilva/todolist-frontend).
+> Foi desenvolvido também o **front end Minhas listas**. Se quiser olhar como ficou [clique aqui](https://github.com/kassiosilva/todolist-frontend-v2).
 
 Esse backend traz todas as principais funcionalidades de uma lista de tarefas, além de persistir as tarefas em um banco de dados.
 
